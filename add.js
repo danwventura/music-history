@@ -3,10 +3,6 @@
 let linkAdd = document.getElementById("link-add");
 let addView = document.getElementById("add-view")
 
-
-
-
-
 linkAdd.addEventListener("click", function(event){
   listView.classList.add("hidden")
   listView.classList.remove("visible")
@@ -17,7 +13,6 @@ linkAdd.addEventListener("click", function(event){
   addView.classList.add("visible")
 
 })
-
 
 let hideAddView = function (){
   addView.classList.add("hidden")

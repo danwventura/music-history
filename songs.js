@@ -2,8 +2,6 @@
 let stringContainer = document.getElementById("list-view");
 let songs = [];
 let button = document.getElementById("add");
-// let userMusic = document.getElementsByClassName("userMusic")
-  // console.log("user", userMusic);
 let userSong = document.getElementById("userSong");
 let userArtist = document.getElementById("userArtist");
 let userAlbum = document.getElementById("userAlbum");
@@ -23,27 +21,20 @@ songs.unshift("Spirits >  The Strumbellas on the album TBA");
 // Adding event listener to add info submitted by user
 button.addEventListener("click", function(){
   let userNewString = `${userSong.value} > ${userArtist.value} on the album ${userAlbum.value}`
-  // console.log("new", songs);
   
+  
+  //pushing user string into songs array
     songs.push(userNewString)
-    console.log("songs", songs);
     
-
-
 
 //For loop to iterate through songs
 for (let i = 0; i < songs.length; i++) {
 //adding replace methods to remove "*","@","(","!" and replace ">" with "-"
   let cleanStrings = songs[i].replace (/[*@(!]/g,"").replace(">","-")
   
-  
-
-
   //Printing list of songs to DOM
    stringContainer.innerHTML += `<div>${cleanStrings}</div>`;
 
-  
-}
-
+  }
 
 });
