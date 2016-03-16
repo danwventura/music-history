@@ -1,5 +1,5 @@
 "use strict"
-let playlist = document.getElementById("music")
+let playlist = document.getElementById("list-view")
 let songs = [];
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
