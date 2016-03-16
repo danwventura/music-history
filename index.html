@@ -12,82 +12,80 @@
 
 <body>
 
-<nav>
-  <ul>
-    <li class="navbar" ><a href="#" id="link-list"> View Music|</a></li>
-    <li class="navbar" ><a href="#" id="link-add"> Add Music|</a></li>
-    
-  </ul>
-</nav>
+    <nav>
+      <ul>
+        <li class="navbar" ><a href="#" id="link-list"> View Music</a></li>
+        <li class="navbar" ><a href="#" id="link-add"> Add Music</a></li>
+        
+      </ul>
+    </nav>
 
-<div class="wrapper">
+    <div class="wrapper">
 
-<section id="container">
-
-
-<form-action="song picker" method="POST">
-  <label for="Song Length:">Song Length:</label>
-<br>  
-  <input type="range" placeholder="Song Length">
-
-  
-<br>
-  <p>Artist:</p>
-  <select name="Artist">
-    <option value="Mario">Mario</option>
-    <option value="Drake">Drake</option>
-    <option value="Izzy Bizu">Izzy Bizu</option>
-    <option value="The Strokes">The Strokes</option>
-  </select>
+      <section id="container">
 
 
 
-<br>
+       <label for="Song Length:">Song Length:</label>
+    <br>  
+        <input type="range" placeholder="Song Length">
 
-  <p> Album: </p>
-  <select name="Album">
-    <option value="Turning Point">Turning Point</option>
-    <option value="Nothing Was the Same">Nothing Was the Same</option>
-    <option value="A Moment of Madness"> A Moment of Madness</option>
-    <option value="Is This It">Is This It</option>
-  </select>
-<br>
-<br>  
-  <label for="Genre">Genre:</label>
+      
+    <br>
+      <p>Artist:</p>
+      <select name="Artist">
+        <option value="Mario">Mario</option>
+        <option value="Drake">Drake</option>
+        <option value="Izzy Bizu">Izzy Bizu</option>
+        <option value="The Strokes">The Strokes</option>
+      </select>
 
-<br>
 
-  <input type="checkbox">Rock 
-  <input type="checkbox">Classical
-<br>
-<br>
-  <input type="checkbox">Pop 
-  <input type="checkbox">Jazz
-<br>
-<br>
-  <input type="checkbox">Blues
-  <input type="checkbox">Hip Hop
-<br>
-<br>
-  <button type="Submit" class="filter">Filter</button>
+
+    <br>
+
+      <p> Album: </p>
+      <select name="Album">
+        <option value="Turning Point">Turning Point</option>
+        <option value="Nothing Was the Same">Nothing Was the Same</option>
+        <option value="A Moment of Madness"> A Moment of Madness</option>
+        <option value="Is This It">Is This It</option>
+      </select>
+    <br>
+    <br>  
+      <label for="Genre">Genre:</label>
+
+    <br>
+
+      <input type="checkbox">Rock 
+      <input type="checkbox">Classical
+    <br>
+    <br>
+      <input type="checkbox">Pop 
+      <input type="checkbox">Jazz
+    <br>
+    <br>
+      <input type="checkbox">Blues
+      <input type="checkbox">Hip Hop
+    <br>
+    <br>
+      <button type="Submit" class="filter">Filter</button>
 
 </section>
-
-
-<!-- This is the "add-view"/"link-add" -->
-<input type="text" class ="userMusic"placeholder="Enter Song"> </input>
-<input type="text" class="userMusic" placeholder="Enter Artist"> </input>
-<input type="text" clas="userMusic" placeholder="Enter Album"> </input>
-<button id="add">Add</button>
-
-
 
 
 <section id="list-view">
 
 </section>
 
+  </div>
+<!-- This is the "add-view"/"link-add" -->
+
 <section id="add-view">
+      <input type="text" class ="userMusic"placeholder="Enter Song"> </input>
+      <input type="text" class="userMusic" placeholder="Enter Artist"> </input>
+      <input type="text" class="userMusic" placeholder="Enter Album"> </input>
+      <button class="userMusic" id="add">Add</button>
 
 </section>
 
@@ -95,23 +93,6 @@
 
 
 
-</div>
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="songs.js"></script>
-<script type="text/javascript" src="home.js"></script>
-<script type="text/javascript" src="add.js"></script>
-<script type="text/javascript" src="list.js"></script>
-
-</body>
 
 
 
@@ -123,6 +104,13 @@
 
 
 
+
+
+      <script type="text/javascript" src="songs.js"></script>
+      <script type="text/javascript" src="list.js"></script>
+      <script type="text/javascript" src="add.js"></script>
+
+  </body>
 
 
 
