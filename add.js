@@ -19,6 +19,6 @@ linkAdd.addEventListener("click", function(event){
 })
 
 
-hideAddView = function (){
+let hideAddView = function (){
   addView.classList.add("hidden")
 }();
