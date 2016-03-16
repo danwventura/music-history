@@ -14,15 +14,15 @@
 
 <nav>
   <ul>
-    <li class="navbar"><a href="View Music"> View Music|</a></li>
-    <li class="navbar"><a href="Add Music"> Add Music|</a></li>
-    <li class="navbar"><a href="Profile"> Profile</a></li>
+    <li class="navbar" ><a href="#" id="link-list"> View Music|</a></li>
+    <li class="navbar" ><a href="#" id="link-add"> Add Music|</a></li>
+    
   </ul>
 </nav>
 
 <div class="wrapper">
 
-<section class="container">
+<section id="container">
 
 
 <form-action="song picker" method="POST">
@@ -73,10 +73,26 @@
 
 </section>
 
-<section id="music">
 
+<!-- This is the "add-view"/"link-add" -->
+<input type="text" class ="userMusic"placeholder="Enter Song"> </input>
+<input type="text" class="userMusic" placeholder="Enter Artist"> </input>
+<input type="text" clas="userMusic" placeholder="Enter Album"> </input>
+<button id="add">Add</button>
+
+
+
+
+<section id="list-view">
 
 </section>
+
+<section id="add-view">
+
+</section>
+
+
+
 
 
 </div>
@@ -91,6 +107,10 @@
 
 
 <script type="text/javascript" src="songs.js"></script>
+<script type="text/javascript" src="home.js"></script>
+<script type="text/javascript" src="add.js"></script>
+<script type="text/javascript" src="list.js"></script>
+
 </body>
 
 
