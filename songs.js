@@ -1,6 +1,8 @@
 "use strict"
-let playlist = document.getElementById("list-view")
+let stringContainer = document.getElementById("list-view")
 let songs = [];
+
+
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
 songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
@@ -25,8 +27,9 @@ for (let i = 0; i < songs.length; i++) {
 
 
   //Printing list of songs to DOM
-   playlist.innerHTML += `<div>${cleanStrings}</div>`;
+   stringContainer.innerHTML += `<div>${cleanStrings}</div>`;
 
 
 }
+
 
