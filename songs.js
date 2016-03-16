@@ -1,20 +1,33 @@
 "use strict"
-let stringContainer = document.getElementById("list-view")
+let stringContainer = document.getElementById("list-view");
 let songs = [];
+let button = document.getElementById("add");
+// let userMusic = document.getElementsByClassName("userMusic")
+  // console.log("user", userMusic);
+let userSong = document.getElementById("userSong");
+let userArtist = document.getElementById("userArtist");
+let userAlbum = document.getElementById("userAlbum");
 
-
-
-songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
-songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
-songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
-songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
-songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
+songs[songs.length] = "Legs >  Z*ZTop on the album Eliminator";
+songs[songs.length] = "The Logical Song >  Supertr@amp on the album Breakfast in America";
+songs[songs.length] = "Another Brick in the Wall > Pink Floyd on the album The Wall";
+songs[songs.length] = "Welco(me to the Jungle > Guns & Roses on the album Appetite for Destruction";
+songs[songs.length] = "Ironi!c > Alanis Moris*ette on the album Jagged Little Pill";
 
 
 //Using push/unshift array methods to add songs to beginning/end of array
-songs.push("Reptilia > by The Strokes on the album Room on Fire") 
-songs.unshift("Spirits > by The Strumbellas on the album TBA");
+songs.push("Reptilia >  The Strokes on the album Room on Fire");
+songs.unshift("Spirits >  The Strumbellas on the album TBA");
 
+
+// Adding event listener to add info submitted by user
+button.addEventListener("click", function(){
+  let userNewString = `${userSong.value} > ${userArtist.value} on the album ${userAlbum.value}`
+  // console.log("new", songs);
+  
+    songs.push(userNewString)
+    console.log("songs", songs);
+    
 
 
 
@@ -29,7 +42,8 @@ for (let i = 0; i < songs.length; i++) {
   //Printing list of songs to DOM
    stringContainer.innerHTML += `<div>${cleanStrings}</div>`;
 
-
+  
 }
 
 
+});
